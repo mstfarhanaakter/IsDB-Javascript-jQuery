@@ -1,0 +1,108 @@
+var a = 2
+        var b = 32
+        var sum = a + b
+        document.write(sum);
+        console.log(sum);
+        document.write("<br>");
+        var name = "My name is Farhana"
+        document.write(name);
+         console.log(name);
+       console.log(typeof name);
+        document.write("<br>");
+       var EF;
+       var EF = 1.3
+       document.write(EF);
+       document.write("<br>");
+       document.write("<br>");
+       console.log(typeof EF)
+        
+    // integer value
+    var a = 50
+    var b = 45
+// boolean value
+        document.write(a<b);
+        console.log(a<b);
+        document.write("<br>");
+
+        // string value
+        var c = "this is string"
+        var d = "THis is single string"
+
+        document.write(d);
+        document.write("<br>");
+        // boolean value
+        document.write(a>b);
+        
+        console.log(a>b);
+        console.log(typeof a)
+        document.write("<br>");
+        // array
+        var array = [1, 2, 5, 6, 7, 9]
+        console.log(array[0])
+        console.log(array[1])
+        console.log(array[2])
+        console.log(array[3])
+        console.log(array[4])
+        console.log(array[5])
+        document.write(array);
+        console.log(array)
+        console.log(typeof(array))
+ document.write("<br>")
+  document.write("<br>")
+        // function
+        var first = 100;
+        var second = 400;
+        function addition() {
+            document.write(first + second);
+            console.log(first + second);
+            // alert(first + second);
+        }
+        addition();
+        document.write("<br>")
+         document.write("<br>")
+        // function for substract
+        var a =  2339
+        var b = 345
+        var c = 456
+        var d = 45
+        function subtract(){
+            console.log(a - b - c- d);
+            // alert(a - b - c - d);
+            document.write(a - b - c - d)
+        }
+        subtract();
+         document.write("<br>")
+          document.write("<br>")
+// function for input user
+        var a =  0
+        var b = 0
+        var c = 0
+        var d = 0
+        function input(a,b,c,d){
+            console.log(a + b + c + d);
+            // alert(a + b + c + d);
+            document.write(a + b + c + d);
+        }
+        input(3300,300,500,500);
+         document.write("<br>")
+          document.write("<br>")
+
+        //   alert 
+        var a = "My name is--"
+        // console.log(a)
+        // alert(a);
+
+        
+        var b = prompt("Name: ")
+        document.write(a,b);
+        document.write("<br>");
+        document.write("<br>");
+
+        let x =345
+        console.log(x)
+        document.write(x)
+
+       document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
+       
+       
+       
