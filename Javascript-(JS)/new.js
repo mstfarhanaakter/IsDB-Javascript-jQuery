@@ -93,7 +93,7 @@ var a = 2
         // alert(a);
 
         
-        var b = prompt("Name: ")
+        // var b = prompt("Name: ")
         document.write(a,b);
         document.write("<br>");
         document.write("<br>");
@@ -103,6 +103,34 @@ var a = 2
         document.write(x)
 
        document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
+
+
+    //    arithmatic decrement
+    var i = 10
+    i --;
+    var result = i;
+    console.log(result);
+    document.write(result);
+    document.write("<br>");
+
+     //    arithmatic increment
+      var i = 110
+    i ++;
+    
+    var result = i;
+    i++;
+    var newval1 =i;
+    i++;
+      var newval2 =i;
+    i++;
+    console.log(result);
+    console.log(newval1);
+    console.log(newval2);
+
+    document.write(result)
        
+      var a = 8;
+      var b = 5;
+       console.log(a+b);
        
        
