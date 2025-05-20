@@ -149,16 +149,21 @@ var a = 2
 
            const naame ="Mark";
           console.log(naame);
-
+        // logic gate and
           let t = 12;
           let e = 15;
           let f = 12;
           console.log(t<e) && (e>f);
-
+// logic gate or
           var r = 12;
           var u = 12;
           var p = 12;
           console.log(r<u) || (u>p);
+// loigc gate and
+          var n = 12;
+          var i = 12;
+          var w = 19;
+          console.log (!(i<w));
        
        
 
