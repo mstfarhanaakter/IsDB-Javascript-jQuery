@@ -102,7 +102,7 @@ var a = 2
         console.log(x)
         document.write(x)
 
-       document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
+      //  document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
 
 
     //    arithmatic decrement
@@ -127,10 +127,41 @@ var a = 2
     console.log(newval1);
     console.log(newval2);
 
-    document.write(result)
+    document.write(result);
        
       var a = 8;
       var b = 5;
        console.log(a+b);
+        alert("what is your name?")
+       confirm("Is Your name is Farhana?");
+
+       var d = (7!==7);
+       document.write(d);
+       console.log(d)
+       let m = 10;
+       let y = "10";
+       console.log(m=y);
+       document.write(m==y);
+
+       var name = "Mark";
+         var  name = "Ace";
+           console.log(name);
+
+           const naame ="Mark";
+          console.log(naame);
+
+          let t = 12;
+          let e = 15;
+          let f = 12;
+          console.log(t<e) && (e>f);
+
+          var r = 12;
+          var u = 12;
+          var p = 12;
+          console.log(r<u) || (u>p);
+       
+       
+
+       
        
        
