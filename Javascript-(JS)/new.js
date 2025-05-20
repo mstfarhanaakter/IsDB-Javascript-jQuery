@@ -172,7 +172,12 @@ var a = 2
           // concatenating
           var message = "Thanks for your input";
           var userName = prompt()
-          alert("Thanks," + userName + "!");
+          // alert("Thanks," + userName + "!");
+// promt
+var j = prompt("Where does the Pope live ?");
+if (j === "Vatican") {
+alert("Correct !");
+}
        
 
        
