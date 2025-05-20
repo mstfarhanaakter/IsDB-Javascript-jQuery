@@ -84,8 +84,8 @@ var a = 2
             document.write(a + b + c + d);
         }
         input(3300,300,500,500);
-         document.write("<br>")
-          document.write("<br>")
+         document.write("<br>");
+          document.write("<br>");
 
         //   alert 
         var a = "My name is--"
@@ -132,8 +132,8 @@ var a = 2
       var a = 8;
       var b = 5;
        console.log(a+b);
-        alert("what is your name?")
-       confirm("Is Your name is Farhana?");
+      //   alert("what is your name?")
+      //  confirm("Is Your name is Farhana?");
 
        var d = (7!==7);
        document.write(d);
@@ -164,7 +164,15 @@ var a = 2
           var i = 12;
           var w = 19;
           console.log (!(i<w));
+          
+          // modulus
+          var num = 9 % 3;
+          console.log(num);
        
+          // concatenating
+          var message = "Thanks for your input";
+          var userName = prompt()
+          alert("Thanks," + userName + "!");
        
 
        
