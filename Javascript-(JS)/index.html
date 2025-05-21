@@ -50,6 +50,7 @@
         console.log(a > b);
         console.log(typeof a)
         document.write("<br>");
+
         // array
         var array = [1, 2, 5, 6, 7, 9]
         console.log(array[0])
@@ -63,6 +64,7 @@
         console.log(typeof (array))
         document.write("<br>")
         document.write("<br>")
+
         // function
         var first = 100;
         var second = 400;
@@ -139,9 +141,9 @@
         document.write("<br>")
         document.write("<br>")
         // 
-        // let x = prompt("Enter Your Name: ");
+        let x = prompt("Enter Your Name: ");
         // let y = x.toUpperCase();
-        // let y = x.toLowerCase();
+        let y = x.toLowerCase();
 
         switch (y) {
             case "A":
@@ -170,8 +172,9 @@ document.write(u);
 const we = prompt("enter your number:");
 const us = we>4 ? "Yes": "no";
 document.write(us);
+document.write("<br>")
 
-modulus
+// modulus
 let num = 4;
 if (num % 2 == 0){
     console.log("The number is EVEN");
@@ -179,7 +182,7 @@ if (num % 2 == 0){
 else{
     console.log("This is ODD");
     }
-
+document.write("<br>")
 //     // with promt
     let num1 = prompt("Enter Number-");
 if (num1 % 2 == 0){
@@ -190,11 +193,55 @@ else{
     console.log("This is ODD");
      document.write("odd")
     }
+document.write("<br>")
 
 // ternary modules 
 const num2 =prompt("ENTER NUMBER- ")
 const num3 = num2 % 2 ==0 ? "Right": "Left";
-document.write(num3)
+document.write(num3);
+document.write("<br>")
+
+// 
+var point = prompt("Input Your Result");
+switch(true){
+    case(point>= 90 && point <= 100):
+    document.write("A+");
+    break;
+    case(point>= 80 && point <= 89):
+    document.write("A");
+    break;
+    case(point>= 70 && point <= 79):
+    document.write("A-");
+    break;
+    case(point>= 60 && point <= 69):
+    document.write("B");
+    break;
+    default:
+    document.write("Your result")
+    
+}
+document.write("<br>")
+
+// grade point using if condition statement
+let grade =prompt("INPUT NUM");
+if(grade>=90 && grade <=100){
+    document.write("A+");
+}
+else if (grade >=80 && grade<=89){
+    document.write("A");
+}
+else if (grade >=70 && grade<=79){
+    document.write("B");
+}
+else if (grade >=60 && grade<=69){
+    document.write("C");
+}
+else{
+    document.write("Fail")
+}
+    
+
+
 
 
     </script>
