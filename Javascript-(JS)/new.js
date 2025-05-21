@@ -178,7 +178,18 @@ var j = prompt("Where does the Pope live ?");
 if (j === "Vatican") {
 alert("Correct !");
 }
-       
+      //  switch, case, default(else)
+      let o = 8;
+      switch(o){
+        case 0:
+          document.write("light on")
+          break;
+        case 1:
+          document.write("Light off")
+          break;
+        default:
+          document.write("undefine value")
+      }
 
        
        
