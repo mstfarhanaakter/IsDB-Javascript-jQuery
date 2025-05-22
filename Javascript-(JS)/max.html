@@ -8,14 +8,13 @@
 <body>
 <script>
     // large number found 
-    var m = 34;
-    var n = 45;
-    var o = 4567;
+    
 
 
-    let x =parseFloat( prompt("First no."));
-    let y =parseFloat( prompt("Second no."));
-    let z =parseFloat( prompt("Third no."));
+    let x = prompt("First no.");
+    let y = prompt("Second no.");
+    let z = prompt("Third no.");
+
     // if(x>y && x>z && y>z){
     //     document.write("This is the largest number:")
     // }
@@ -23,13 +22,13 @@
     //     document.write("THis is the smallest number")
     // }
     if(x>y && x>z){
-        document.write("This is the largest Number: X")
+        document.write("This is the largest Number: " + x);
     }
     else if(y>x && y>z){
-        document.write("This is the largest Number: y")
+        document.write("This is the largest Number: " + y);
     }
     else{
-        document.write("THis is the Smallest number; z")
+        document.write("THis is the largest number: "+ z);
     }
 
 // const a = 57;
