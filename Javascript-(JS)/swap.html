@@ -8,6 +8,7 @@
 <body>
     <script>
 
+        
         // Ascending order means arranging items from smallest to largest.
         var a = (parseInt(prompt("Enter number: ")))
         var b = (parseInt(prompt("Enter number: ")))
@@ -31,7 +32,27 @@
         document.write(a +"," +b + "," +c);
 
         // Descending order means arranging items from highest to lowest, whether it's numbers, letters, dates, or anything else
-        
+
+        var x = (parseInt(prompt("Enter number: ")))
+        var y = (parseInt(prompt("Enter number: ")))
+        var z = (parseInt(prompt("Enter number: ")))
+
+        if (x<y){
+            temp=x;
+            x=y;
+            y=temp;
+        }
+         if (y<z){
+            temp=y;
+            y=z;
+            z=temp;
+        }
+         if (x<z){
+            temp=z;
+            z=x;
+            x=temp;
+        }
+        document.write(a +"," +b + "," +c);
     </script>
 </body>
 </html>
