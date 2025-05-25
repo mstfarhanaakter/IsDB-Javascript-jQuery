@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        body{
+            margin: 20px 0 0 20px;
+            
+        }
+        h2{
+            text-align: center;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Question no-01</h1>
+    <p>Write a program if a student get 60% marks is Graded "B",  if get 70% is graded "A", and if get 80% then get "A+"</p>
+    <h2>Answer to the Question no. 01</h2>
+    <script>
+        var grade = prompt("Enter Your Grade Here--");
+        if(grade>=80){
+            document.write("Marks: &nbsp", grade  +  "&nbsp You Obtain A+" );
+        }
+        else if (grade>=70){
+             document.write("Marks: &nbsp", grade + "&nbsp You Obtain A" );
+        }
+         else if (grade>=60){
+             document.write("Marks: &nbsp", grade + "&nbsp You Obtain B" );
+        }
+        else{
+            document.write("Marks: &nbsp", grade + "&nbsp You Obtain F")
+        }
+        
+    </script>
+</body>
+</html>

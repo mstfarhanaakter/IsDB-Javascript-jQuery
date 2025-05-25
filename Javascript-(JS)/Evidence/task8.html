@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+</head>
+
+<body>
+    <b>8. Sorting three numbers in javaScript (Desending Order).</b>
+    <script>
+        const a = (parseInt(prompt("Enter 1st Number: ")));
+        const b = (parseInt(prompt("Enter 2nd Number: ")));
+        const c = (parseInt(prompt("Enter 3rd Number: ")));
+
+        if (a < b)
+        {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+        
+        if (a < c) 
+        {
+            temp = c;
+            a = c;
+            a = temp; 
+        }
+        
+        if (b < c) 
+        {
+            temp = b;
+            b = c;
+            c = temp;
+        }
+        documemt.write("Desending Order: &nbsp" + a + "," + b + "," + c);
+        console.log("Desending Order: &nbsp" + a + "," + b + "," + c);
+    </script>
+
+</body >
+</html >

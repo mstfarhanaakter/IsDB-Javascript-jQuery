@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <h3>JavaScripting program which will count how many is positive, 
+        how many negative ,how many are zero and sum up  
+        numbers for the following array:
+        var data = [4,4,-4,-1,0,-8,0,45,9,79];
+    </h3>
+
+    <script>
+        var data = [4,4,-4,-1,0,-8,0,45,9,79];
+        var positive = 0;
+        var negative = 0;
+        var zero = 0;
+        var sum = 0
+
+        for (i = 0; i<data.length;i++){
+            if(data[i]>0){
+                positive++;
+            }
+            else if(data[i]<0){
+                negative++;
+            }
+            else{
+                zero++;
+            }
+        }
+        document.write("Positive Number: &nbsp", positive + "<br>")
+        document.write("Negative Number: &nbsp", negative + "<br>")
+        document.write("Zero Number: &nbsp", zero + "<br>")
+    </script>
+</body>
+</html>
