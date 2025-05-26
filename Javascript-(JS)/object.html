@@ -15,16 +15,16 @@
             model: 500,
             weight: 1000,
             start: function () {
-                return this.brand + "car is about to start" + "<br> ";
+                return this.brand + "&nbsp car is about to start" + "<br> ";
             },
             drive: function () {
-                return this.brand + "car is about to drive" + "<br> ";
+                return this.brand + "&nbsp car is about to drive" + "<br> ";
             },
             brake: function () {
-                return this.brand + "car is about to break" + "<br> ";
+                return this.brand + "&nbsp car is about to break" + "<br> ";
             },
             stop: function () {
-                return this.brand + "car is about to stop" + "<br> ";
+                return this.brand + "&nbsp car is about to stop" + "<br> ";
             }
         }
         // document.write(car['brand']);
@@ -37,6 +37,7 @@
         console.log(car.brake());
         console.log(car.stop());
         // console.log(car['brand']);
+        console.log(typeof(car));
         console.log(car);
 
     </script>
