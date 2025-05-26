@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+        const car = {
+            brand: "Audi",
+            color: "Black",
+            model: 500,
+            weight: 1000,
+            start: function () {
+                return this.brand + "car is about to start" + "<br> ";
+            },
+            drive: function () {
+                return this.brand + "car is about to drive" + "<br> ";
+            },
+            brake: function () {
+                return this.brand + "car is about to break" + "<br> ";
+            },
+            stop: function () {
+                return this.brand + "car is about to stop" + "<br> ";
+            }
+        }
+        // document.write(car['brand']);
+        document.write(car.start());
+        document.write(car.drive());
+        document.write(car.brake());
+        document.write(car.stop());
+        console.log(car.start());
+        console.log(car.drive());
+        console.log(car.brake());
+        console.log(car.stop());
+        // console.log(car['brand']);
+        console.log(car);
+
+    </script>
+</body>
+
+</html>
