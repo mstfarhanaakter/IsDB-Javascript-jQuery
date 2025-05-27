@@ -6,10 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    0 1 1 2 3 5 8 13 21
+    <!-- 0 1 1 2 3 5 8 13 21 25 -->
     <!-- 0-10 series -->
     <script>
-var n = 10, first= 0, second= 1, next = 0;
+var n = 11, n1= 0, n2= 1, next = 0;
+for (let i = 1; i <= n; i++) {
+    console.log(n1);
+    document.write(n1);
+    next = n1 + n2;
+    n1 = n2;
+    n2 = next;
+}
 
     </script>
 </body>
