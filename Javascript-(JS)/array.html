@@ -61,8 +61,25 @@
         console.log(fruit) //is used to convert values to string format.
         
         const fruit1 = ["banana ", "apple ", "orange ", "Mango "]
+        const fruit3 = ["b ", "a ", "o ", "M "]
+        console.log(fruit3.concat( fruit1))
         console.log(fruit1.concat(0,1, "Fahana"));
-        console.log(fruit1)
+        // console.log(fruit1)
+
+        // slice  
+        const fruit2 = ["banana ", "apple ", "orange ", "Mango ", "date", "water"]
+        // console.log(fruit2.slice(2)); // orange, mango
+        console.log(fruit2.slice(3)); // Mango
+        console.log(fruit2.slice(1,3));
+        // console.log(fruit2)
+
+        // splice method is used to add, remove, or replace 
+        // elements in an array in place (it modifies the original array).
+
+        let fruits = ["Apple", "Banana", "date" , "fig"]
+            fruits.splice(1, 1, "Juice") // start, delete, insert
+            console.log(fruits)
+
     </script>
 </body>
 
