@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+
+        // push
         var a = ["a", "b", "c", "d", "e"];
-        console.log(a.length)
-        a.push('Farhana') // Adds an element to the end.
-        console.log(a)
+            console.log(a.length);
+            a.push('Farhana'); // Adds an element to the end.
+            console.log(a);
 
+        // pop
         let b = []; // can be write on this 
-         b[0] = "Farhana";
-         b[1] = "Shetu";
-         b[2] = "is student of IDB"
-         console.log(b.length) // Returns number of elements.
-         
-         b.pop() // Removes the last element.
-         console.log(b)
-         
-         let c = ["apple", "mango", "banana", "lichi"]
-         c.unshift("papaya") // Adds to the beginning.
-         console.log(c);
+            b[0] = "Farhana";;
+            b[1] = "Shetu";;
+            b[2] = "is student of IDB";
+            console.log(b.length); // Returns number of elements.
+            b.pop(); // Removes the last element.
+            console.log(b);
 
-         let d = ["apple", "Bat", "cat", "dog", "egg", "fish"]
-         d.shift()
-         console.log(d)
-         console.log(d.length) // Removes the first element.
+        // unshift
+        let c = ["apple", "mango", "banana", "lichi"];
+            c.unshift("papaya"); // Adds to the beginning.
+            console.log(c);
+
+        // shift
+        let d = ["apple", "Bat", "cat", "dog", "egg", "fish"];
+            d.shift();
+            console.log(d);
+            console.log(d.length) // Removes the first element.
+
+        /*The includes() method checks if a specific value exists in an array or string,
+        and returns a boolean (true or false).*/  
+
+        let e = ["rahim", "karim", "sobita", "ray", "farhana","ling" ];
+        let exist = e.includes("Earn"); 
+        console.log(exist)
+
+        // sort
+        let letter = ["s", "b", "a", "d", "f"];
+            letter.sort();
+            console.log(letter);
+            letter.reverse();
+            console.log(letter);
+
+        // reverse
+        let num = [1, 2, 3, 4, 5,6,7,8,9,10];
+            num.reverse()
+            console.log(num)
+
+            // toString
+        const fruit = ["banana ", "apple ", "orange ", "Mango "]
+        console.log(fruit.toString());
+        console.log(fruit) //is used to convert values to string format.
         
+        const fruit1 = ["banana ", "apple ", "orange ", "Mango "]
+        console.log(fruit1.concat(0,1, "Fahana"));
+        console.log(fruit1)
     </script>
 </body>
+
 </html>
