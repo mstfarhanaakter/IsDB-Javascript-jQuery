@@ -79,12 +79,21 @@
         let fruits = ["Apple", "Banana", "date", "fig"]
         fruits.splice(1, 1, "Juice") // start, delete, insert
         console.log(fruits)
-        
+
         // Join
         var x = ["A", "B", "C", "D", "E"];
         var y = x.join(" * ")
         var y = x.join(" and ")
         console.log(y)
+
+        // filter  creates a new array that includes only
+        //  the elements that pass a test (return true) from a callback function.
+
+        const ages = [23, 24, 25, 16, 27, 27];
+        document.write(filter(checkAdult))
+        function checkAdult(age){
+            return age >=18;
+        }
     </script>
 </body>
 
