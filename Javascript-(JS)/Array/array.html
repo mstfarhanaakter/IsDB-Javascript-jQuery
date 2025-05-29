@@ -102,12 +102,13 @@
             console.error("Found a Probelm")
         }
 
-
-        // const ages1 = [23, 24, 25, 16, 27, 27];
-        // document.write(filter(checkAdult))
-        // function checkAdult(age){
-        //     return age >=18;
-        // }
+        // filter use 
+        const ages1 = [23, 14, 15, 16, 27, 28, 29];
+        console.log(ages1.filter(checkAdult));
+        document.write(ages1.filter(checkAdult));
+        function checkAdult(age){
+            return age >=18;
+        }
 
         let index = fruit.lastIndexOf("Date");
         console.log(index);
@@ -116,7 +117,10 @@
         let index1 = fruit4.indexOf("papaya");
         console.log(index1)
 
-       
+       let n5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+       let n6 = n5.slice(5,10);
+       console.log(n6)
+
 
        
     </script>
