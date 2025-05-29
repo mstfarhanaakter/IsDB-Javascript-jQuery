@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding Prime Number</title>
 </head>
+
 <body>
     <script>
+        const n = parseInt(prompt("Enter number: "));
 
-    
-    for (i = 2; i<=number/2; i++){
-        if(i=){
-
+        let prime = true;
+        if (n == 0 || n == 1) {
+            document.write(" The number is not Prime or Composite");
+        } 
+        else {
+            for (i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    prime = false;
+                    break;
+            }
         }
-    }
-</script>
+        if (prime == true) {
+                document.write(n + " " + "is a prime number");
+            } 
+            else {
+                document.write(n + " " + "is a not prime number");
+            }
+        }
+    </script>
 </body>
+
 </html>
