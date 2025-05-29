@@ -66,14 +66,15 @@
         console.log(fruit1.concat(0, 1, "Fahana"));
         // console.log(fruit1)
 
-        // slice  (start, end)
+        // slice  (start, end)Count 
+        // start 1 after comma (,)
         const fruit2 = ["banana ", "apple ", "orange ", "Mango ", "date", "water"]
         // console.log(fruit2.slice(2)); // orange, mango
         console.log(fruit2.slice(3)); // Mango
         console.log(fruit2.slice(1, 3));
         // console.log(fruit2)
 
-        // splice method is used to add, remove, or replace   (start, deleteCount, item1, item2, ...)
+        // splice method is used to add, remove, or replace   (start, deleteCount, item1, item2, . ..)
         // elements in an array in place (it modifies the original array).
 
         let fruits = ["Apple", "Banana", "date", "fig"]
@@ -88,17 +89,19 @@
 
         // filter  creates a new array that includes only
         //  the elements that pass a test (return true) from a callback function.
+
+        // error handing
         try {
             const ages = [23, 24, 25, 16, 27, 27];
-        document.write(filter(checkAdult))
-        function checkAdult(age){
-            return age >=18;
-        } 
-    }
+            document.write(filter(checkAdult))
+            function checkAdult(age) {
+                return age >= 18;
+            }
+        }
         catch (error) {
             console.error("Found a Probelm")
         }
-        
+
 
         // const ages1 = [23, 24, 25, 16, 27, 27];
         // document.write(filter(checkAdult))
@@ -111,8 +114,11 @@
 
         let fruit4 = ["apple", "papaya", "banana", "Date", "Mango", 4, 5, 7, 7.8];
         let index1 = fruit4.indexOf("papaya");
-        
         console.log(index1)
+
+       
+
+       
     </script>
 </body>
 
