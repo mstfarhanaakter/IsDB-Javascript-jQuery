@@ -37,9 +37,28 @@
         var shirts = 7.99
         var shipping = 4.99
         var totalC = toast + ball + shirts + shipping
-        console.log(totalC)
+        console.log("$" + totalC)
 
+        //Calculate in cents to avoid inaccuracies
+
+        var  totalCo = (1899 + 2095 + 799 + 499)/100
+        console.log("$" + totalCo)
+
+        // tax 
+        var tax2 = totalCo * .1 // 10% tax
+        console.log("$" + tax2)
         
+        //Math.round()
+        var tax3 = totalCo * .1 // 10% tax
+        console.log("$"+ Math.round(tax3))
+
+        //total order
+        var totalCOST = (totalC + tax3);
+        console.log("$" + totalCOST)
+
+        //
+        let x = 5292 *.1
+        console.log(x /100)
 
     </script>
 </body>

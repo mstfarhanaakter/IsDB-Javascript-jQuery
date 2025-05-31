@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <?php
+echo "My first PHP script!";
+?> 
+    <script>
+        // var a = 10
+        // var b = 0
+        // document.write(a/b)
+        // console.log(a/b)
+
+        function addA(a, b){
+            return a + b;
+          
+        }
+        // addA(50, 2)
+          document.write(addA(50, 2))
+          console.log(addA)
+
+        //  Arrow function
+
+        const addition = (a,b) => a + b; // single line
+        console.log(addition(3,2));
+        document.write(" ", addition(3,2));
+
+         const addition1 = (a,b) =>{ // Multiple line of code
+            if (a > b)
+            return "a is greater";
+            else
+            return "b is greter";
+
+         } ; 
+        console.log(addition1(3,2));
+        document.write(" ", addition1(3,2));
+
+          //A function can access all variables in the Global scope (public)
+          let m = 5;
+          let n = 6;
+          function myFunction(){
+            return m * n;
+          }
+          document.write(myFunction());
+          document.write("<br>");
+          
+          function sub(){
+            return m - n 
+          }
+          document.write(sub());
+
+          // A function can access all variable in the local scope (private)
+          
+          function myFunction1(){
+            let m1 = 5;
+          let n1 = 6;
+            return m1 * n1;
+          }
+          document.write(myFunction1());
+          document.write("<br>");
+          
+          function sub1(){
+            return m1 - n1 
+          }
+          document.write(sub1());
+
+    </script>
+</body>
+</html>
