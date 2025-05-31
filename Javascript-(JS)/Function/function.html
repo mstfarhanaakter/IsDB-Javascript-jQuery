@@ -55,20 +55,28 @@ echo "My first PHP script!";
 
           // A function can access all variable in the local scope (private)
           
-          function myFunction1(){
-            let m1 = 5;
-          let n1 = 6;
-            return m1 * n1;
-          }
-          document.write(myFunction1());
-          document.write("<br>");
+        //   function myFunction1(){
+        //     let m1 = 5;
+        //   let n1 = 6;
+        //     return m1 * n1;
+        //   }
+        //   document.write(myFunction1());
+        //   document.write("<br>");
           
-          function sub1(){
-            return m1 - n1 
-          }
-          document.write(sub1());
+        //   function sub1(){
+        //     return m1 - n1 
+        //   }
+        //   document.write(sub1());
 
-          
+          // an anonymous function that returns the square of a number
+          function info (){
+            return "hello this is farhana\n"
+          }
+          document.write(info())
+          const g = function (){
+            return `\nhello`
+          }
+          document.write (g());
     </script>
 </body>
 </html>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Number</title>
 </head>
+
 <body>
     <script>
         var soup = 10;
@@ -17,19 +19,19 @@
         var burgers = 8 * 3
         var ice = 5
         var total = soup + burgers + ice
-        var person = 3; 
-        console.log("$" + total/person);
+        var person = 3;
+        console.log("$" + total / person);
 
         var toaster = 18.50
         var shirts = 7.50 * 2
         var totalCost = toaster + shirts
         console.log("$" + totalCost)
-        
-        var tax = totalCost *0.1 // 10% = 10/100= 0.1
+
+        var tax = totalCost * 0.1 // 10% = 10/100= 0.1
         console.log("$" + tax)
 
-        var tax1 = totalCost *0.2; // 20% = 20/100 = 0.2
-        console.log("$" +tax1);
+        var tax1 = totalCost * 0.2; // 20% = 20/100 = 0.2
+        console.log("$" + tax1);
 
         // Total Price of Product 
         var toast = 18.99;
@@ -41,25 +43,41 @@
 
         //Calculate in cents to avoid inaccuracies
 
-        var  totalCo = (1899 + 2095 + 799 + 499)/100
+        var totalCo = (1899 + 2095 + 799 + 499) / 100
         console.log("$" + totalCo)
 
         // tax 
         var tax2 = totalCo * .1 // 10% tax
         console.log("$" + tax2)
-        
+
         //Math.round()
         var tax3 = totalCo * .1 // 10% tax
-        console.log("$"+ Math.round(tax3))
+        console.log("$" + Math.round(tax3))
 
         //total order
         var totalCOST = (totalC + tax3);
         console.log("$" + totalCOST)
 
         //
-        let x = 5292 *.1
-        console.log(x /100)
+        // let x = 5292 *.1
+        // console.log("$" + x /100)
 
+        console.log("$" + Math.round((1899 + 2095 + 799 + 499) * 0.1) / 100)
+        let c = totalCo // total cost of product
+        let t = Math.round((1899 + 2095 + 799 + 499) * 0.1) / 100 // tax 10% count on total // /100 use to divide by total cost 
+        let sum = c + t
+        console.log("$" + sum)
+
+        let r = Math.round(2.8)
+        console.log('$' + r)
+
+        // calculate temperature
+        let temperature = prompt("Enter Temperature Here !")
+        let fahrenheight = (temperature * 9 / 5) + 32;
+        let celsius = (temperature - 32) * 5 / 9;
+        console.log(fahrenheight);
+        console.log(celsius);
     </script>
 </body>
+
 </html>
