@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class Car {
+            start(){
+                console.log("start")
+            }
+            stop (){
+                console.log("stop")
+            }
+            setBrand(brand){
+                this.brandName = brand;
+
+            }
+        }
+        let fortuner = new Car();
+        fortuner.setBrand("fortuner")
+        let lexus = new Car();
+        lexus.setBrand("lexus")
+        
+
+    </script>
+</body>
+</html>
