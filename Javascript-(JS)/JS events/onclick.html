@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript HTML Events</title>
 </head>
+
 <body>
     <button onclick="fname()">Click Me</button>
-    <input type="button" value="Increment" onclick="increment()" >
-    <input type="button" value="Decrement" onclick="decrement()" >
-    <!-- <button onclick="Increment(), Decrement()">Click Me!</button> -->
-        <!-- <button onclick="this.innerHTML=Date()">The time is?</button> -->
-         
-        <script>
-            function fname(){
-                // document.write("hello")
-                alert("Hello, My name is Farhana")
-                // confirm("Hello, My name is Farhana")
-            }
-            document.write("<br>")
+    <input type="button" value="Increment" onclick="increment()">
 
-            let a = 0;
-            function increment(){
-                console.log(a++);
-               
-            }
-            function decrement(){
-                console.log(a--)
-            }
-      
-            
-        </script>
+    <input type="button" value="Decrement" onclick="decrement()">
+    <br>
+    <br>
+    <span id="idn"></span>
+    <!-- <button onclick="Increment(), Decrement()">Click Me!</button> -->
+    <!-- <button onclick="this.innerHTML=Date()">The time is?</button> -->
+
+    <script>
+        function fname() {
+            // document.write("hello")
+            alert("Hello, My name is Farhana")
+            // confirm("Hello, My name is Farhana")
+        }
+        document.write("<br>")
+
+        let a = 0;
+        document.getElementById('idn').innerHTML = a;
+
+        function increment() {
+            // console.log(a++);
+            document.getElementById('idn').innerHTML = a++;
+
+        }
+        function decrement() {
+            // console.log(a--);
+            document.getElementById('idn').innerHTML = a--;
+        }
+
+
+    </script>
 </body>
+
 </html>
