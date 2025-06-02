@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        class Car {
+        class Carr {
             start(){
                 console.log("start")
             }
@@ -19,12 +19,48 @@
 
             }
         }
-        let fortuner = new Car();
-        fortuner.setBrand("fortuner")
-        let lexus = new Car();
-        lexus.setBrand("lexus")
+        let fortuner = new Carr("fortuner");
+            // fortuner.setBrand()
+            console.log(fortuner.setBrand())
+        let lexus = new Carr();
+            lexus.setBrand("lexus")
         
 
+        class Car{
+            constructor(name,color,price){
+                this.name = name;
+                this.color = color;
+                this.price = price;
+            }
+            show(){
+                return this.name +" " + this.color +" is running "+ "and this car price" + this.price
+            }
+        }
+        let newCar = new Car("Audi", "Gray ", 23000)
+            // document.write(newCar.show())
+            a = newCar.show();
+            document.write(a);
+            document.write("<br>");
+            // document.write(.color);
+            // document.write(a.color + "and price "+ a.price)
+            // document.write(newCar.color + "and price "+ newCar.price)
+        class Mobile{
+            constructor(name,origin,color, size){
+                this.name = name;
+                this.origin = origin;
+                this.color = color;
+                this.size = size;
+            }
+            output(){
+                return "The phone name is " + this.name + ", origin from " + this.origin + ", color is " + this.color + " and size " + this.size
+            }
+        }
+        let newMobile = new Mobile("Samsung"," Korea" ,"Blue", 185.5+ " gram")
+        document.write(newMobile.output())
+        console.log(newMobile.output())
+        document.write("<br>")
+        let newMobile1 = new Mobile("Walton", "Bangladesh", "Black", 190 + " gram")
+        document.write(newMobile1.output())
     </script>
 </body>
 </html>
