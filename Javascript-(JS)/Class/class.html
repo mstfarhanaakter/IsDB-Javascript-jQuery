@@ -27,13 +27,13 @@
         
 
         class Car{
-            constructor(name,color,price){
+            constructor(name,rang,price){
                 this.name = name;
-                this.color = color;
+                this.color = rang;
                 this.price = price;
             }
             show(){
-                return this.name +" " + this.color +" is running "+ "and this car price" + this.price
+                return this.name +" " + this.rang +" is running "+ "and this car price" + this.price
             }
         }
         let newCar = new Car("Audi", "Gray ", 23000)
@@ -61,6 +61,27 @@
         document.write("<br>")
         let newMobile1 = new Mobile("Walton", "Bangladesh", "Black", 190 + " gram")
         document.write(newMobile1.output())
+
+       class Bike extends Car{ //inheritence 
+        constructor(model,speed,name, color,price){
+            super(name,color,price); //which i need to call from parent this also have to include in constructor
+            this.model = model;
+            this.power = speed;
+            
+        }
+           view() {
+            return "The bike name is " + this.model + " and its " + this.power + "cc"
+           }
+       }
+       let newBike = new Bike("Royel Enfield", 300, "India", 239455, "black" )
+       document.write("<br>")
+       console.log(newBike.view())
+       document.write(newBike.view())
+       document.write(newBike.show())
+
+    //    class Car extends Bike{
+        
+    //    }
     </script>
 </body>
 </html>
