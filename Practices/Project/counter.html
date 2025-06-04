@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: lightblue
+        }
+        #counter{
+            text-align: center;
+            font-size: 100px;
+            color: green;
+        }
+        input{
+         width: 10%;
+         height: 60pxpx;
+         gap: 40px;
+         background-color: rgb(189, 189, 249);
+         font-weight: bold;
+         border-radius: 10px;
+        }
+        .Input{
+            justify-content: center;
+            align-items: center;
+            display: inline;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- html -->
+    <h1>Counter</h1>
+    <p id="counter"></p>
+    <span class="Input">
+
+        <button onclick="decrease()">Decrease</button>
+        <button>Reset</button>
+        <button onclick="increment()">Increase</button>
+    <!-- <input type="button" value="Decrease" onclick="decrease()">
+    <input type="reset" onclick="reset()">
+    <input type="button" value="Increment" onclick="increment()"> -->
+    </span>
+
+
+    <!-- javascript -->
+     <script>
+        let x = 0;
+        document.getElementById('counter').innerHTML = x;
+
+        function increment(){
+            document.getElementById('counter').innerHTML = x++;
+        }
+         function reset(){
+            document.getElementById('counter').innerHTML = 0;
+        }
+        function decrease(){
+            document.getElementById('counter').innerHTML = x--;
+        }
+       
+       
+
+     </script>
+</body>
+</html>
