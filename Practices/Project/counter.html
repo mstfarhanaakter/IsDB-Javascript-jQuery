@@ -47,18 +47,49 @@
 
     <!-- javascript -->
      <script>
-        let x = 0;
-        document.getElementById('counter').innerHTML = x;
+        // let x = 0;
+        // document.getElementById('counter').innerHTML = x;
 
-        function increment(){
-            document.getElementById('counter').innerHTML = x++;
-        }
-         function reset(){
-            document.getElementById('counter').innerHTML = 0;
-        }
-        function decrease(){
-            document.getElementById('counter').innerHTML = x--;
-        }
+        // function increment(){
+        //     document.getElementById('counter').innerHTML = x++;
+        // }
+        //  function reset(){
+        //     document.getElementById('counter').innerHTML = 0;
+        // }
+        // function decrease(){
+        //     document.getElementById('counter').innerHTML = x--;
+        // }
+
+        // set inital value to zero
+let count = 0;
+// select value and buttons
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const styles = e.currentTarget.classList;
+    if (styles.contains("decrease")) {
+      count--;
+    } else if (styles.contains("increase")) {
+      count++;
+    } else {
+      count = 0;
+    }
+
+    if (count > 0) {
+      value.style.color = "green";
+    }
+    if (count < 0) {
+      value.style.color = "red";
+    }
+    if (count === 0) {
+      value.style.color = "#222";
+    }
+    value.textContent = count;
+  });
+});
+
        
        
 
