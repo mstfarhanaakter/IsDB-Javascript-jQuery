@@ -6,12 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="">Click Here</button>
+    <button onclick="myFunction()">Click Here</button>
+    <br>
+    <br>
+    <form action="" name="f">
+        Name: 
+        <input type="text" name="n" >
+        <br>
+        <br>
+        Email: 
+        <input type="email" name="e">
+        <br>
+        <br>
+        Gender:
+        <input type="radio" name="g">Male
+        <input type="radio" name="g">Female
+        <br>
+        <br>
+        <input type="submit" onclick="my_f()">
+        <input type="reset">
+    </form>
 
     <script>
+        function my_f(){
+            var name = document.f.n.value;
+            var email = document.f.e.value;
+            var gender = document.f.g.value;
+            doc = open(" ", " ", "width:400px, height:400px");
+            with(doc.document){
+                write("Name:" + name);
+                write("<br>");
+                write("Email:" + email);
+                write("<br>");
+                write("Gender:" + gender);
+                write("<br>");
+
+            }
+            
+        }
+        
         function myFunction(){
-         let x =   window.open(" ", " ", "width:400, height:400");
-         w.document.write("<h1>Hello, World. I am here!</h1>")   
+      let x =   window.open(" ", " ", "width:100px, height:400");
+        x.document.write("<h1>Hello, World. I am here!</h1>");
         }
     </script>
 </body>
