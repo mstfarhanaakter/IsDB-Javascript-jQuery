@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <button onclick="myFunction()">Click Here</button>
     <br>
     <br>
     <form action="" name="f">
-        Name: 
-        <input type="text" name="n" >
+        Name:
+        <input type="text" name="n">
         <br>
         <br>
-        Email: 
+        Email:
         <input type="email" name="e">
         <br>
         <br>
@@ -28,12 +30,12 @@
     </form>
 
     <script>
-        function my_f(){
+        function my_f() {
             var name = document.f.n.value;
             var email = document.f.e.value;
             var gender = document.f.g.value;
             doc = open(" ", " ", "width:400px, height:400px");
-            with(doc.document){
+            with (doc.document) {
                 write("Name:" + name);
                 write("<br>");
                 write("Email:" + email);
@@ -42,13 +44,14 @@
                 write("<br>");
 
             }
-            
+
         }
-        
-        function myFunction(){
-      let x =   window.open(" ", " ", "width:100px, height:400");
-        x.document.write("<h1>Hello, World. I am here!</h1>");
+
+        function myFunction() {
+            let x = window.open(" ", " ", "width:100px, height:400");
+            x.document.write("<h1>Hello, World. I am here!</h1>");
         }
     </script>
 </body>
+
 </html>
