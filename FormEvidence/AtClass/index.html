@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="container w-50">
+    <h1 class="text-center">Form Registration</h1>
+    <form action="" id="form">
+        <div class="">
+        <label for="fn" class="fw-bold">First Name </label>
+        <input type="text" name="fn" id="fn" class="w-50" placeholder="First Name">
+        <br>
+        <br>
+        <label for="ln" class="fw-bold">Last Name </label>
+        <input type="text"  name="ln" id="ln"  class="w-50" placeholder="Last Name">
+        <br>
+        <br>
+        <label for="email" class="fw-bold">Email </label>
+        <input type="email" placeholder="Write your email!" name="email" id="email" class="w-50">
+       <br>
+       <br>
+       <label for="con" class="fw-bold">Contact No. </label>
+       <input type="text" placeholder="" name="con" id="con"  class="w-50" >
+       <br>
+       <br>
+       <label for="g" class="fw-bold">Gender </label>  
+       <input type="radio" name="g" value="Male">Male &nbsp; &nbsp;
+       <input type="radio" name="g" value="Female">Female
+       <br>
+       <br>
+       <label for="courses" class="fw-bold">Courses </label>    
+       <input type="checkbox" name="courses" value="Javascript">Javascript    &nbsp; &nbsp;
+       <input type="checkbox" name="courses" value="HTML">HTML    &nbsp; &nbsp;
+       <input type="checkbox" name="courses" value="Bootstrap/CSS">Bootstrap/CSS    &nbsp; &nbsp;
+       <input type="checkbox" name="courses" value="C#">C#
+       <br>
+       <br>
+       <label for="location" class="fw-bold">Location</label>
+       <select name="location" id="" class="w-50 p-1"> 
+        <option value="Dhaka">Dhaka</option>
+        <option value="Rajshahi">Rajshahi</option>
+        <option value="Slyhet">Sylhet</option>
+       </select>
+       <br>
+       <br>
+
+       <label for="remarks" class="fw-bold">Remarks </label>
+       <textarea name="remarks" value="Remarks" id="" placeholder="Write your comments here!" class="w-50"></textarea>
+
+       <br>
+       <br>
+       <input type="submit" class="text-uppercase bg-info fw-bold border-0 p-1 fs-5 ">
+ </form>
+</div>
+
+            
+        </div>
+   
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

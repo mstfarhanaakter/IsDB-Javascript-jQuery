@@ -1,0 +1,14 @@
+label {
+    width: 100px;
+}
+
+form {
+    /* border: 1px solid black; */
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #95a5a6;
+
+}
