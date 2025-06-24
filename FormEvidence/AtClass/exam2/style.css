@@ -1,0 +1,34 @@
+
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+ }
+ fieldset{
+    
+ }
+legend{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+}
+form label{
+  
+   font-weight: bold;
+   width: 100px;
+   
+}
+form{
+    background-color: #95b1ee;
+    /* width: 250px; */
+}
+.button{
+    background-color: #fff;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}

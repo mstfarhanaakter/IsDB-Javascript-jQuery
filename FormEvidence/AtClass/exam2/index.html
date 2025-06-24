@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <fieldset>
+                <legend>Form Registration</legend>
+                <label for="fn">First Name</label>
+                <input type="text" placeholder="First Name" name="fn">
+                <br>
+                <br>
+                <label for="ln">Last Name</label>
+                <input type="text" placeholder="Last Name" name="ln">
+                <br>
+                <br>
+                <label for="e">Email</label>
+                <input type="email" name="e">
+                <br>
+                <br>
+                <label for="c">Contact No. </label>
+                <input type="text" name="c">
+                <br>
+                <br>
+                <label for="">Gender</label>
+                <input type="radio" name="g" value="Male">Male
+                <input type="radio" name ="g" value="Female">Female
+                <br>
+                <br>
+                <label for="courses">Courses</label>
+                <input type="checkbox" name="courses" value="HTML">HTML
+                <input type="checkbox" name="courses" value="CSS">CSS
+                <input type="checkbox" name="courses" value="Javascript">Javascript   
+                <input type="checkbox" name="courses" value="PHP">PHP
+                <br>
+                <br>
+                <label for="l">Location</label>
+                <select name="l" id="">
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Rajshahi">Rajshahi</option>
+                    <option value="Sylhet">Sylhet</option>
+                    <option value="Rangpur">Rangpur</option>
+
+                </select>
+                <br>
+                <br>
+                <label for="r">Remarks</label>
+                <textarea name="r" id="" placeholder="Write your Comments Here!"></textarea>
+                <br>
+                <br>
+                <input type="reset" class="button">
+                <input type="submit" class="button">
+            </fieldset>
+        </form>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
