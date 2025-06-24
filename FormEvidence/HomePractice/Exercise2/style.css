@@ -1,0 +1,49 @@
+div{
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+}
+fieldset{
+    width: 600px;
+}
+ legend{
+    text-align: center;
+    padding: 10px;
+ }
+ form{
+    padding: 10px;
+ }
+
+ label {
+  display: inline-block; /* or block */
+  width: 120px;
+  
+}
+.hey0{
+    padding: 5px;
+}
+.hey{
+    width: 7.5%;
+    padding: 5px;
+}
+.hey1{
+    width: 5%;
+    padding: 5px;
+}
+
+#hi{
+    min-width: 345px;
+    padding: 5px;
+}
+#hi1{
+    min-width: 285px;
+    padding: 5px;
+}
+ .btn{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: lightgreen;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+ }

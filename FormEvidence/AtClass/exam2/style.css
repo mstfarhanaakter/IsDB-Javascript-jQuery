@@ -15,8 +15,8 @@ legend{
     margin: 5px;
     font-weight: bold;
 }
-form label{
-  
+label{
+  display: inline-block;
    font-weight: bold;
    width: 100px;
    

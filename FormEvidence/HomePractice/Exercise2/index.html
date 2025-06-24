@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <form action="" id="form">
+        <fieldset>
+            <legend>Student Registration Form</legend>
+            <label for="roll" >Roll no.: </label>
+            <input type="text" id="hi" name="roll">
+            <br>
+            <br>
+            <label for="sname">Student Name: </label>
+            <input type="text" name="fname" placeholder="First Name" class="hey0"> - <input type="text" placeholder="Last Name" class="hey0" name="fname">
+            <br>
+            <br>
+            <label for="pname">Father's Name: </label>
+            <input type="text" id="hi" name="fname">
+            <br>
+            <br>
+            <label for="d">Date of birth: </label>
+            <input type="text" name="d" placeholder="Day" class="hey"> - <input type="text" placeholder="Month" class="hey" name="d"> - <input type="text" placeholder="Year" class="hey" name="d"> <i>(DD-MM-YYYY)</i>
+            <br>
+            <br>
+            <label for="m">Mobile no.: </label>
+            <input type="text" name="m" placeholder="+880" class="hey1" > - <input type="text" id="hi1">
+            <br>
+            <br>
+            <label for="e">Email Id : </label>
+            <input type="email" id="hi" name="e">
+            <br>
+            <br>
+            <label for="p">Password: </label>
+            <input type="password" id="hi" name="p">
+            <br>
+            <br>
+            <label for="g">Gender: </label>
+            <input type="radio" name="g" value="Male">Male
+            <input type="radio" name="g" value="Male">Female
+            <br>
+            <br>
+            <label for="dep">Department: </label>
+            <input type="checkbox" name="dep" value="Marketing">Marketing
+            <input type="checkbox" name="dep" value="Accounting">Accounting
+            <input type="checkbox" name="dep" value="Finance">Finance 
+            <input type="checkbox" name="dep" value="Management">Management
+            <input type="checkbox" name="dep" value="International Relation">IR
+            <br>
+            <br>
+            <label for="course">Course</label>
+           <select name="course">
+            <option value="">Choose your courses!</option>
+            <option value="Principle of Marketing"> Principle of Marketing</option>
+            <option value="Principle of Accounting"> Principle of Accounting</option>
+            <option value=" Principle of Finance"> Principle of Finance</option>
+            <option value="Principle of Managment"> Principle of Managment</option>
+            <option value="Principle of Tourism Managemnet"> Principle of Tourism Managemnet</option>
+           </select>
+           <br>
+           <br>
+           <label for="sp">Student Photo: </label>
+           <input type="file" >
+           <br>
+           <br>
+           <label for="city">City: </label>
+           <input type="text" id="hi" name="city">
+           <br>
+           <br>
+           <label for="add">Address: </label>
+           <input type="text" id="hi" name="add">
+           <br>
+           <br>
+           <label for="sug">Suggestions: </label>
+           <textarea name="sug" id="hi"></textarea>
+           <br>
+           <br>
+
+           <input type="submit" value="Register" class="btn">
+        </fieldset>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
