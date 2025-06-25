@@ -1,17 +1,23 @@
 div{
    display: flex;
    justify-content: center;
-   align-items: center;   
+   align-items: center; 
+   /* color: white;  
+   font-weight: bold; */
 }
 fieldset{
     width: 600px;
+    /* background-color: #006266; */
 }
  legend{
     text-align: center;
     padding: 10px;
+    margin-top: 10px;
+   
  }
  form{
     padding: 10px;
+    
  }
 
  label {
