@@ -1,6 +1,6 @@
 // Calculate 10!
-n = prompt("Enter number of factorial you want: ")
-fact = 1
+let n = prompt("Enter number of factorial you want: ")
+let fact = 1
 for (i = 1; i <= n; i++ ){
     fact *=i
 }
