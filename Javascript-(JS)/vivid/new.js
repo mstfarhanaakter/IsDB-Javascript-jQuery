@@ -149,7 +149,7 @@ var a = 2
 
            const naame ="Mark";
           console.log(naame);
-        // logic gate and
+// logic gate and
           let t = 12;
           let e = 15;
           let f = 12;

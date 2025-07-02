@@ -1,131 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class</title>
 </head>
+
 <body>
-    <script>
-        class Carr {
-            start(){
-                console.log("start")
-            }
-            stop (){
-                console.log("stop")
-            }
-            setBrand(brand){
-                this.brandName = brand;
-
-            }
+<script>
+    class Carr {
+        start() {
+            console.log("start")
         }
-        let fortuner = new Carr("fortuner");
-            // fortuner.setBrand()
-            console.log(fortuner.setBrand())
-        let lexus = new Carr();
-            lexus.setBrand("lexus")
-        
-
-        class Car{
-            constructor(name,rang,price){
-                this.name = name;
-                this.color = rang;
-                this.price = price;
-            }
-            show(){
-                return this.name +" " + this.rang +" is running "+ "and this car price" + this.price
-            }
+        stop() {
+            console.log("stop")
         }
-        let newCar = new Car("Audi", "Gray ", 23000)
-            // document.write(newCar.show())
-            a = newCar.show();
-            document.write(a);
-            document.write("<br>");
-            // document.write(.color);
-            // document.write(a.color + "and price "+ a.price)
-            // document.write(newCar.color + "and price "+ newCar.price)
-        class Mobile{
-            constructor(name,origin,color, size){
-                this.name = name;
-                this.origin = origin;
-                this.color = color;
-                this.size = size;
-            }
-            output(){
-                return "The phone name is " + this.name + ", origin from " + this.origin + ", color is " + this.color + " and size " + this.size
-            }
-        }
-        let newMobile = new Mobile("Samsung"," Korea" ,"Blue", 185.5+ " gram")
-        document.write(newMobile.output())
-        console.log(newMobile.output())
-        document.write("<br>")
-        let newMobile1 = new Mobile("Walton", "Bangladesh", "Black", 190 + " gram")
-        document.write(newMobile1.output())
+        setBrand(brand) {
+            this.brandName = brand;
 
-       class Bike extends Car{ //inheritence 
-        constructor(model,speed,name, color,price){
-            super(name,color,price); //which i need to call from parent this also have to include in constructor
+        }
+    }
+    let fortuner = new Carr("fortuner");
+    // fortuner.setBrand()
+    console.log(fortuner.setBrand())
+    let lexus = new Carr();
+    lexus.setBrand("lexus")
+
+
+    class Car {
+        constructor(name, rang, price) {
+            this.name = name;
+            this.color = rang;
+            this.price = price;
+        }
+        show() {
+            return this.name + " " + this.rang + " is running " + "and this car price" + this.price
+        }
+    }
+    let newCar = new Car("Audi", "Gray ", 23000)
+    // document.write(newCar.show())
+    a = newCar.show();
+    document.write(a);
+    document.write("<br>");
+    // document.write(.color);
+    // document.write(a.color + "and price "+ a.price)
+    // document.write(newCar.color + "and price "+ newCar.price)
+    class Mobile {
+        constructor(name, origin, color, size) {
+            this.name = name;
+            this.origin = origin;
+            this.color = color;
+            this.size = size;
+        }
+        output() {
+            return "The phone name is " + this.name + ", origin from " + this.origin + ", color is " + this.color + " and size " + this.size
+        }
+    }
+    let newMobile = new Mobile("Samsung", " Korea", "Blue", 185.5 + " gram")
+    document.write(newMobile.output())
+    console.log(newMobile.output())
+    document.write("<br>")
+    let newMobile1 = new Mobile("Walton", "Bangladesh", "Black", 190 + " gram")
+    document.write(newMobile1.output())
+
+    class Bike extends Car { //inheritence 
+        constructor(model, speed, name, color, price) {
+            super(name, color, price); //which i need to call from parent this also have to include in constructor
             this.model = model;
             this.power = speed;
-            
+
         }
-           view() {
+        view() {
             return "The bike name is " + this.model + " and its " + this.power + "cc"
-           }
-       }
-       let newBike = new Bike("Royel Enfield", 300, "India", 239455, "black" )
-       document.write("<br>")
-       console.log(newBike.view())
-       document.write(newBike.view())
-       document.write(newBike.show())
-
-    //    class Car extends Bike{
-        
-    //    }
-
-
-    class SSC{
-        constructor(name,reg,result){
-            this.name = name;
-            this.reg = reg;
-            this.result = result;
-        }
-        results(){
-            return this.name+ " " + this.reg+ " " + this.result
         }
     }
+    let newBike = new Bike("Royel Enfield", 300, "India", 239455, "black")
     document.write("<br>")
-    let newSsc = new SSC("Sabrina", 1707024, 3.24)
-    document.write(newSsc.results())
+    console.log(newBike.view())
+    document.write(newBike.view())
+    document.write(newBike.show())
 
-    class HSC extends SSC{
-        constructor(name,father,mother,reg,result){
-            super(name,reg,result)
-            this.father=father;
-            this.mother = mother;
-        }
-        results1(){
-            return this.name + " "+ this.father + " " + this.mother +" "+ this.reg +" " +this.result
-        }
-    }
-    let b = new HSC ("Sabrina","Ali","Selina",1707024,3.24 )
-    document.write("<br>")
-    document.write(b.results1())
-    console.log(b.results1())
-    // document.write(b.results())
 
-    class BBA extends HSC {
-        constructor(name,father,mother,reg,result,college,subject){
-            super(name,father,mother,reg,result)
-            this.college=college;
-            this.subject= subject;
-        }
-        result2(){
-            return this.name + " "+ this.father + " " + this.mother +" "+ this.reg +" " +this.result +" " + this.college+" "+this.subject
-        }
-    }
-    let c = new BBA ("Sabrina","Ali","Selina",1707024,3.24, "Begum Rokeya University, Rangpur", "Department of Marketing ");
-    console.log(c.result2());
-    </script>
+
+</script>
 </body>
+
 </html>
