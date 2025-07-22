@@ -37,11 +37,12 @@ function Prime(num) {
 // Main logic to print the first 100 prime numbers
 let count = 0;
 let number = 2;
+let sum = 0
 
 while (count < 100) {
     if (Prime(number)) {
         console.log(number);
         count++;
     }
-    number++;
+    sum++;
 }
