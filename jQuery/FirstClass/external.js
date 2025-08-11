@@ -19,17 +19,51 @@ $(document).ready(function(){
 // $('#one').hide(5000);
 // $('#one').show(5000);
 
-// $('.two').hide(6000);
-// $('.two').show(6000);
+// $('#two').hide(6000);
+// $('#two').show(6000);
 
 $(document).ready(function(){
     $('#hide').click(function(){
         $('#one').hide(5000);
-        $('.two').hide(6000);
+        $('#two').hide(6000);
     })
-    $('.show').click(function(){
+    $('#show').click(function(){
         $('#one').show(3000)
-        $('.two').show(4000)
+        $('#two').show(4000)
 
     })
 })
+
+//for table odd and even one 
+
+$(document).ready(function(){
+
+    //hide odd rows
+    $('.hide').click(function(){
+        $('tr:odd').hide(5000);
+    })
+
+    //hide even rows
+    $('.show').click(function(){
+         $('tr:even').hide(5000);
+    })
+
+    //table even rows 
+    $('.toggle').click(function(){
+        $('table').toggle(3000);
+    })
+})
+
+// for ul 
+ $(document).ready(function(){
+    $("ul li:first-child").hide(4000);
+    $('ul li:last-child').hide(4000);
+    $('ul li')
+}
+
+    )
+
+    
+       
+        
+
