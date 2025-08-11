@@ -56,12 +56,17 @@ $(document).ready(function(){
 
 // for ul 
  $(document).ready(function(){
-    $("ul li:first-child").hide(4000);
-    $('ul li:last-child').hide(4000);
-    $('ul li')
-}
-
-    )
+    $('.first').click(function(){
+         $("ul li:first-child").hide(4000);
+    })
+    $('.last').click(function(){
+         $('ul li:last-child').hide(4000);
+    })
+    $('.toggle-ul').click(function(){
+          $('ul li').toggle(4000)
+    })
+   
+   })
 
     
        
