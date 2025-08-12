@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Sugar</li>
+        <li>Water</li>
+        Buy From <a href="#">Daraz</a> <br>
+        Buy From <a class="remove" href="#" target="_blank">Daraz</a>
+        <br>
+        <br>
+        <div>Hi, I am Farhana</div><br>
+        <p>Hey</p>
+    </ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $('a').attr('href', 'https://www.daraz.com.bd/');
+    $('.remove').removeAttr('href', 'https://www.daraz.com.bd/');
+    $('a').attr('href', 'https://www.daraz.com.bd/');
+    $('.remove').removeAttr('target');
+
+    // $('div').css('color', '#51a3a3' );
+    $('div').css({"background-color": "#e2856e", "color": "white", "font-size": "20px"})
+    $('div').addClass('new');
+    $('p').addClass("new hey you");
+    $
+
+
+</script>
+</body>
+</html>
