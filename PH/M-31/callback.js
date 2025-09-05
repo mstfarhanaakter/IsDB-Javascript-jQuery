@@ -32,3 +32,25 @@ calculate(5, 6, (a, b) => {
     console.log(`Total multiple number is ${a * b}`);
     return a * b;
 })
+
+
+// -----------------pass by value----------------------//
+
+let num = 10;
+let newNum = num;
+    num = 20; 
+console.log(num)
+console.log(newNum)
+
+//---------pass by reference-----------------//
+
+let obj = {
+    name: "Farhan",
+    age: 25, 
+    city: "Dhaka"
+}
+
+let obj1 = obj
+
+    obj1.name= "shetu"
+console.log(obj1)
