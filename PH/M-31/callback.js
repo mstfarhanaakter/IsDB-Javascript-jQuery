@@ -54,3 +54,31 @@ let obj1 = obj
 
     obj1.name= "shetu"
 console.log(obj1)
+
+//------------------Truety vs Falsy------------------------//
+
+console.log(Boolean(""));  // empty string always false
+console.log(Boolean("Farhana")); // non-empty string always true
+console.log(Boolean("0")); // It is considered as string so, it is true
+console.log(Boolean(0)); // in Js 0 means False
+console.log(Boolean([])); // empty array true
+console.log(Boolean({})); // empty object true
+
+
+//---------------------------------------------//
+
+let x = 5; // Global scope
+function num(x){
+    return x;
+}
+
+console.log(num(x))  
+
+function name(){
+    let y = "Farhana";
+    console.log(`My name is ${y}`)
+    return y;
+}
+name()
+
+
