@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #div-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+        padding: 20px;
+    }
+    .card{
+       border: 1px solid #ccc;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 6px;
+            background-color: #ebfcf0;
+            height: 200px;
+        
+    }
+    .card p{
+        text-align: justify;
+    }
+    .card h4{
+        text-align: center;
+    }
+</style>
+<body>
+    <button onclick="a()">Click Here!</button>
+    <section id="div-container">
+        
+    </section>
+    
+    <script src="posts.js"></script>
+</body>
+</html>
