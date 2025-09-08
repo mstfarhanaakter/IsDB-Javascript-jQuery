@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON with Albums</title>
+</head>
+<style>
+    #container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+    .card{
+        background-color: rgb(255, 221, 248);
+        height: 200px;
+        padding: 10px;
+        border: 1px solid rgb(255, 187, 187);
+        border-radius: 10px;
+        box-shadow: 1px 1px 0 0;
+    }
+    h4{
+        text-align: center;
+    }
+</style>
+<body>
+    <button onclick="loadUser()">See Albums!</button>
+    <section id="container"></section>
+    <script src="album.js"></script>
+</body>
+</html>
